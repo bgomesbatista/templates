@@ -345,7 +345,7 @@
   {
     "title": "B-MariaDb",
     "description": "Bitnami Mariadb",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.pngg",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/mariadb:latest",
     "ports": [
       "3306/tcp"
@@ -368,7 +368,7 @@
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/redis:latest",
     "ports": [
-      "5984/tcp"
+      "6379/tcp"
     ],
     "volumes": ["/bitnami/redis"]
   },
@@ -414,7 +414,7 @@
       }
     ],
     "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"],
-    "network": "dreamfactory"
+    "network":"dreamfactory"
   },
   {
     "title": "Cloud9",
