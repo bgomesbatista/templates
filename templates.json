@@ -473,6 +473,18 @@
     "description": "Microsoft SQL Server Linux",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "microsoft/mssql-server-linux:latest",
+    "env": [
+      {
+        "name": "ACCEPT_EULA",
+        "label": "Accept End User License",
+        "set": "yes"
+      },
+      {
+        "name": "SA_PASSWORD",
+        "label": "Root Password",
+        "set": "yourStrong(!)Password"
+      }
+    ],
     "ports": [
       "1433/tcp"
     ]
