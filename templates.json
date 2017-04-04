@@ -350,7 +350,6 @@
     "ports": [
       "8181/tcp"
     ],
-    "volumes": ["/workspace"],
-    "command":"/bin/sh -c #(nop) ENTRYPOINT [\"forever\" \"/cloud9/server.js\" \"-w\" \"/workspace\" \"--listen\" "0.0.0.0"]"
+    "volumes": ["/workspace"]
   }
 ]
