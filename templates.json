@@ -333,13 +333,24 @@
     "volumes": ["/var/lib/odoo", "/mnt/extra-addons"]
   },
   {
-    "title": "CouchDB",
-    "description": "Apache CouchDb: Seamless multi-master sync, that scales from Big Data to Mobile, with an intuitive HTTP/JSON API and designed for reliability.",
+    "title": "CouchDb",
+    "description": "Apache CouchDb",
     "logo": "http://docs.couchdb.org/en/2.0.0/_static/logo.png",
     "image": "couchdb:latest",
     "ports": [
       "5984/tcp"
     ],
     "volumes": ["/usr/local/var/lib/couchdb"]
+  },
+  {
+    "title": "Bitnami Dreamfactory",
+    "description": "Bitnami Dreamfactory",
+    "logo": "https://github.com/bgomesbatista/templates/blob/master/Downloads-icon.png",
+    "image": "sapk/cloud9:latest",
+    "ports": [
+      "8181/tcp"
+    ],
+    "volumes": ["/workspace"],
+    "command":"/bin/sh -c #(nop) ENTRYPOINT [\"forever\" \"/cloud9/server.js\" \"-w\" \"/workspace\" \"--listen\" "0.0.0.0"]"
   }
 ]
