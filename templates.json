@@ -477,12 +477,11 @@
       {
         "name": "ACCEPT_EULA",
         "label": "Accept End User License",
-        "set": "yes"
+        "set": "Y"
       },
       {
         "name": "SA_PASSWORD",
-        "label": "Root Password",
-        "set": "yourStrong(!)Password"
+        "label": "Root Password"
       }
     ],
     "ports": [
@@ -516,8 +515,7 @@
     "env": [
       {
         "name": "DATABASE_URL",
-        "label": "MongoDb URL",
-        "set": "mongodb://localhost:27017/my_project_development"
+        "label": "MongoDb URL"
       }
     ],
     "ports": [
