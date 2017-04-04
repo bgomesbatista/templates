@@ -362,5 +362,25 @@
       "80/tcp"
     ],
     "volumes": ["/workspace"]
+  },
+  {
+    "title": "XWiki",
+    "description": "Xwiki",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "xwiki:latest",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": ["/usr/local/xwiki"]
+  },
+  {
+    "title": "Owncloud",
+    "description": "Owncloud",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "owncloud:latest",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/var/www/html"]
   }
 ]
