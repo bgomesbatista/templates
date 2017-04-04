@@ -343,7 +343,7 @@
     "volumes": ["/usr/local/var/lib/couchdb"]
   },
   {
-    "title": "Bitnami Dreamfactory",
+    "title": "Dreamfactory",
     "description": "Bitnami Dreamfactory",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/dreamfactory:latest",
@@ -351,5 +351,16 @@
       "8181/tcp"
     ],
     "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
+  },
+  {
+    "title": "Cloud9",
+    "description": "Cloud9",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "sapk/cloud9:latest",
+    "ports": [
+      "443/tcp",
+      "80/tcp"
+    ],
+    "volumes": ["/workspace"]
   }
 ]
