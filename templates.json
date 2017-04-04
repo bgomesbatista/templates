@@ -350,7 +350,7 @@
     "ports": [
       "8181/tcp"
     ],
-    "volumes": ["/workspace"]
+    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
   },
   {
     "title": "Cloud9",
@@ -361,7 +361,7 @@
       "443/tcp",
       "80/tcp"
     ],
-    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
+    "volumes": ["/workspace"]
   },
   {
     "title": "XWiki",
@@ -398,11 +398,7 @@
     "title": "Microsoft DotNet",
     "description": "Microsoft DotNet",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "microsoft/dotnet:latest",
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": ["/data"]
+    "image": "microsoft/dotnet:latest"
   },
   {
     "title": "SQL Server Linux",
@@ -411,8 +407,7 @@
     "image": "microsoft/mssql-server-linux:latest",
     "ports": [
       "1433/tcp"
-    ],
-    "volumes": ["/data"]
+    ]
   },
   {
     "title": "CouchBase",
@@ -440,8 +435,7 @@
     "image": "bitnami/che-express:latest",
     "ports": [
       "3000/tcp"
-    ],
-    "volumes": ["/data"]
+    ]
   },
   {
     "title": "ELK",
