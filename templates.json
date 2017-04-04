@@ -346,7 +346,7 @@
     "title": "Bitnami Dreamfactory",
     "description": "Bitnami Dreamfactory",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "sapk/cloud9:latest",
+    "image": "bitnami/dreamfactory:latest",
     "ports": [
       "8181/tcp"
     ],
@@ -356,7 +356,7 @@
     "title": "Cloud9",
     "description": "Cloud9",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "bitnami/dreamfactory:latest",
+    "image": "sapk/cloud9:latest",
     "ports": [
       "443/tcp",
       "80/tcp"
