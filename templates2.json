@@ -333,8 +333,8 @@
     "volumes": ["/var/lib/odoo", "/mnt/extra-addons"]
   },
   {
-    "title": "CouchDB",
-    "description": "Apache CouchDb: Seamless multi-master sync, that scales from Big Data to Mobile, with an intuitive HTTP/JSON API and designed for reliability.",
+    "title": "CouchDb",
+    "description": "Apache CouchDb",
     "logo": "http://docs.couchdb.org/en/2.0.0/_static/logo.png",
     "image": "couchdb:latest",
     "ports": [
@@ -345,40 +345,38 @@
   {
     "title": "Bitnami Dreamfactory",
     "description": "Bitnami Dreamfactory",
-    "logo": "",
-    "image": "sapk/cloud9:latest",
-    "ports": [
-      "8181/tcp"
-    ],
-    "volumes": ["/workspace"],
-    "command":"/bin/sh -c #(nop) ENTRYPOINT [\"forever\" \"/cloud9/server.js\" \"-w\" \"/workspace\" \"--listen\" "0.0.0.0"]"
-  },
-  {
-    "title": "Cloud9",
-    "description": "Cloud9",
-    "logo": "",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/dreamfactory:latest",
     "ports": [
-      "443/tcp",
-      "80/tcp"
+      "8181/tcp"
     ],
     "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
   },
   {
+    "title": "Cloud9",
+    "description": "Cloud9",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "sapk/cloud9:latest",
+    "ports": [
+      "443/tcp",
+      "80/tcp"
+    ],
+    "volumes": ["/workspace"]
+  },
+  {
     "title": "XWiki",
     "description": "Xwiki",
-    "logo": "",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "xwiki:latest",
     "ports": [
       "8080/tcp"
     ],
-    "volumes": ["/usr/local/xwiki"],
-    "command":"/bin/sh -c #(nop) CMD [\"xwiki\"]"
+    "volumes": ["/usr/local/xwiki"]
   },
   {
     "title": "Owncloud",
     "description": "Owncloud",
-    "logo": "",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "owncloud:latest",
     "ports": [
       "80/tcp"
@@ -388,7 +386,7 @@
   {
     "title": "OrientDb",
     "description": "OrientDb",
-    "logo": "",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "orientdb:latest",
     "ports": [
       "2424/tcp",
@@ -399,10 +397,59 @@
   {
     "title": "Microsoft DotNet",
     "description": "Microsoft DotNet",
-    "logo": "",
-    "image": "microsoft/dotnet:latest",
-    "ports": [],
-    "volumes": []
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "microsoft/dotnet:latest"
+  },
+  {
+    "title": "SQL Server Linux",
+    "description": "Microsoft SQL Server Linux",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "microsoft/mssql-server-linux:latest",
+    "ports": [
+      "1433/tcp"
+    ]
+  },
+  {
+    "title": "CouchBase",
+    "description": "CouchBase DB",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "couchbase:latest	",
+    "ports": [
+      "11207/tcp",
+      "11210/tcp",
+      "11211/tcp",
+      "18091/tcp",
+      "18092/tcp",
+      "18093/tcp",
+      "8091/tcp",
+      "8092/tcp",
+      "8093/tcp",
+      "8094/tcp"
+    ],
+    "volumes": ["/opt/couchbase/var"]
+  },
+  {
+    "title": "Bitnami Eclipse Che",
+    "description": "Bitnami Eclipse Che Express",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "bitnami/che-express:latest",
+    "ports": [
+      "3000/tcp"
+    ]
+  },
+  {
+    "title": "ELK",
+    "description": "ELK",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "sebp/elk:latest",
+    "ports": [
+      "5044/tcp",
+      "5601/tcp",
+      "9200/tcp",
+      "9300/tcp"
+    ],
+    "volumes": ["/var/lib/elasticsearch"]
+  }
   },
   {
     "title": "Microsoft SQL Server Linux",
