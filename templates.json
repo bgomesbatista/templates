@@ -401,7 +401,7 @@
         "set": "root"
       },
       {
-        "name": "MARIADB_ROOT_PASSWORD	",
+        "name": "MARIADB_ROOT_PASSWORD",
         "label": "Maria Root Password"
       },
       {
