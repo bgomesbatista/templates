@@ -399,8 +399,10 @@
     "description": "Microsoft DotNet",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "microsoft/dotnet:latest",
-    "ports": [],
-    "volumes": []
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/data"]
   },
   {
     "title": "SQL Server Linux",
@@ -410,7 +412,7 @@
     "ports": [
       "1433/tcp"
     ],
-    "volumes": []
+    "volumes": ["/data"]
   },
   {
     "title": "CouchBase",
@@ -439,7 +441,7 @@
     "ports": [
       "3000/tcp"
     ],
-    "volumes": []
+    "volumes": ["/data"]
   },
   {
     "title": "ELK",
