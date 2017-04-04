@@ -395,7 +395,7 @@
     "volumes": ["/orientdb/backup","/orientdb/config","/orientdb/databases"]
   },
   {
-    "title": "Microsoft DotNet",
+    "title": "DotNet",
     "description": "Microsoft DotNet",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "microsoft/dotnet:latest"
@@ -429,7 +429,7 @@
     "volumes": ["/opt/couchbase/var"]
   },
   {
-    "title": "Bitnami Eclipse Che",
+    "title": "Eclipse Che",
     "description": "Bitnami Eclipse Che Express",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/che-express:latest",
