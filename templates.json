@@ -402,8 +402,7 @@
       },
       {
         "name": "MARIADB_ROOT_PASSWORD	",
-        "label": "Maria Root Password",
-        "set": ""
+        "label": "Maria Root Password"
       },
       {
         "name": "MONGODB_HOST",
