@@ -331,5 +331,15 @@
       "8069/tcp"
     ],
     "volumes": ["/var/lib/odoo", "/mnt/extra-addons"]
+  },
+  {
+    "title": "CouchDB",
+    "description": "Apache CouchDb: Seamless multi-master sync, that scales from Big Data to Mobile, with an intuitive HTTP/JSON API and designed for reliability.",
+    "logo": "http://docs.couchdb.org/en/2.0.0/_static/logo.png",
+    "image": "couchdb:latest",
+    "ports": [
+      "5984/tcp"
+    ],
+    "volumes": ["/usr/local/var/lib/couchdb"]
   }
 ]
