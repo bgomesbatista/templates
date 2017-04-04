@@ -513,6 +513,13 @@
     "description": "Bitnami Eclipse Che Express",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/che-express:latest",
+    "env": [
+      {
+        "name": "DATABASE_URL",
+        "label": "MongoDb URL",
+        "set": "mongodb://localhost:27017/my_project_development"
+      }
+    ],
     "ports": [
       "3000/tcp"
     ]
