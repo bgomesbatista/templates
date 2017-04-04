@@ -343,7 +343,37 @@
     "volumes": ["/usr/local/var/lib/couchdb"]
   },
   {
-    "title": "Dreamfactory",
+    "title": "B-MariaDb",
+    "description": "Bitnami Mariadb",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.pngg",
+    "image": "bitnami/mariadb:latest",
+    "ports": [
+      "3306/tcp"
+    ],
+    "volumes": ["/bitnami/mariadb"]
+  },
+  {
+    "title": "B-MongoDb",
+    "description": "Bitnami MongoDB",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "bitnami/mongodb:latest",
+    "ports": [
+      "27017/tcp"
+    ],
+    "volumes": ["/bitnami/mongodb"]
+  },
+  {
+    "title": "B-Redis",
+    "description": "Bitnami Redis",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "bitnami/redis:latest",
+    "ports": [
+      "5984/tcp"
+    ],
+    "volumes": ["/bitnami/redis"]
+  },
+  {
+    "title": "B-Dreamfactory",
     "description": "Bitnami Dreamfactory",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/dreamfactory:latest",
@@ -351,7 +381,40 @@
       "80/tcp",
       "443/tcp"
     ],
-    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
+    "env": [
+      {
+        "name": "MARIADB_HOST",
+        "label": "Bitnami Maria",
+        "type": "container"
+      },
+      {
+        "name": "MARIADB_PORT",
+        "label": "Maria Port",
+        "set": "3306"
+      },
+      {
+        "name": "MARIADB_ROOT_USER",
+        "label": "Maria Root User",
+        "set": "root"
+      },
+      {
+        "name": "MARIADB_ROOT_PASSWORD	",
+        "label": "Maria Root Password",
+        "set": ""
+      },
+      {
+        "name": "MONGODB_HOST",
+        "label": "Bitnami Mongo",
+        "type": "container"
+      },
+      {
+        "name": "REDIS_HOST",
+        "label": "Bitnami Redis",
+        "type": "container"
+      }
+    ],
+    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"],
+    "network": "dreamfactory"
   },
   {
     "title": "Cloud9",
