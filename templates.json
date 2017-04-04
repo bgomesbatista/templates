@@ -346,6 +346,17 @@
     "title": "Bitnami Dreamfactory",
     "description": "Bitnami Dreamfactory",
     "logo": "",
+    "image": "sapk/cloud9:latest",
+    "ports": [
+      "8181/tcp"
+    ],
+    "volumes": ["/workspace"],
+    "command":"/bin/sh -c #(nop) ENTRYPOINT [\"forever\" \"/cloud9/server.js\" \"-w\" \"/workspace\" \"--listen\" "0.0.0.0"]"
+  },
+  {
+    "title": "Cloud9",
+    "description": "Cloud9",
+    "logo": "",
     "image": "bitnami/dreamfactory:latest",
     "ports": [
       "443/tcp",
@@ -361,7 +372,8 @@
     "ports": [
       "8080/tcp"
     ],
-    "volumes": ["/usr/local/xwiki"]
+    "volumes": ["/usr/local/xwiki"],
+    "command":"/bin/sh -c #(nop) CMD [\"xwiki\"]"
   },
   {
     "title": "Owncloud",
@@ -400,7 +412,8 @@
     "ports": [
       "1433/tcp"
     ],
-    "volumes": [""]
+    "volumes": [""],
+    "command":"/bin/sh -c mkdir warmup && cd warmup && dotnet new && cd .. && rm -rf warmup && rm -rf /tmp/NuGetScratch"
   },
   {
     "title": "CouchBase DB",
