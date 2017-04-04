@@ -331,5 +331,128 @@
       "8069/tcp"
     ],
     "volumes": ["/var/lib/odoo", "/mnt/extra-addons"]
+  },
+  {
+    "title": "CouchDB",
+    "description": "Apache CouchDb: Seamless multi-master sync, that scales from Big Data to Mobile, with an intuitive HTTP/JSON API and designed for reliability.",
+    "logo": "http://docs.couchdb.org/en/2.0.0/_static/logo.png",
+    "image": "couchdb:latest",
+    "ports": [
+      "5984/tcp"
+    ],
+    "volumes": ["/usr/local/var/lib/couchdb"]
+  },
+  {
+    "title": "Bitnami Dreamfactory",
+    "description": "Bitnami Dreamfactory",
+    "logo": "",
+    "image": "bitnami/dreamfactory:latest",
+    "ports": [
+      "443/tcp",
+      "80/tcp"
+    ],
+    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
+  },
+  {
+    "title": "XWiki",
+    "description": "Xwiki",
+    "logo": "",
+    "image": "xwiki:latest",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": ["/usr/local/xwiki"]
+  },
+  {
+    "title": "Owncloud",
+    "description": "Owncloud",
+    "logo": "",
+    "image": "owncloud:latest",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/var/www/html"]
+  },
+  {
+    "title": "OrientDb",
+    "description": "OrientDb",
+    "logo": "",
+    "image": "orientdb:latest",
+    "ports": [
+      "2424/tcp",
+      "2480/tcp"
+    ],
+    "volumes": ["/orientdb/backup","/orientdb/config","/orientdb/databases"]
+  },
+  {
+    "title": "Microsoft DotNet",
+    "description": "Microsoft DotNet",
+    "logo": "",
+    "image": "microsoft/dotnet:latest",
+    "ports": [],
+    "volumes": []
+  },
+  {
+    "title": "Microsoft SQL Server Linux",
+    "description": "Microsoft SQL Server Linux",
+    "logo": "",
+    "image": "microsoft/mssql-server-linux:latest",
+    "ports": [
+      "1433/tcp"
+    ],
+    "volumes": [""]
+  },
+  {
+    "title": "CouchBase DB",
+    "description": "CouchBase DB",
+    "logo": "",
+    "image": "couchbase:latest	",
+    "ports": [
+      "11207/tcp",
+      "11210/tcp",
+      "11211/tcp",
+      "18091/tcp",
+      "18092/tcp",
+      "18093/tcp",
+      "8091/tcp",
+      "8092/tcp",
+      "8093/tcp",
+      "8094/tcp"
+    ],
+    "volumes": ["/opt/couchbase/var"]
+  },
+  {
+    "title": "Bitnami Eclipse Che Express",
+    "description": "Bitnami Eclipse Che Express",
+    "logo": "",
+    "image": "bitnami/che-express:latest",
+    "ports": [
+      "3000/tcp"
+    ],
+    "volumes": [""]
+  },
+  {
+    "title": "ELK",
+    "description": "ELK",
+    "logo": "",
+    "image": "sebp/elk:latest",
+    "ports": [
+      "5044/tcp",
+      "5601/tcp",
+      "9200/tcp",
+      "9300/tcp"
+    ],
+    "volumes": ["/var/lib/elasticsearch"]
+  },
+  {
+    "title": "",
+    "description": "",
+    "logo": "",
+    "image": "",
+    "ports": [
+      "443/tcp",
+      "80/tcp"
+    ],
+    "volumes": [""]
   }
 ]
