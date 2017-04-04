@@ -347,6 +347,13 @@
     "description": "Bitnami Mariadb",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/mariadb:latest",
+    "env": [
+      {
+        "name": "ALLOW_EMPTY_PASSWORD",
+        "label": "Allow Empty Password",
+        "set": "yes"
+      }
+    ],
     "ports": [
       "3306/tcp"
     ],
@@ -377,10 +384,6 @@
     "description": "Bitnami Dreamfactory",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "bitnami/dreamfactory:latest",
-    "ports": [
-      "80/tcp",
-      "443/tcp"
-    ],
     "env": [
       {
         "name": "MARIADB_HOST",
@@ -413,8 +416,11 @@
         "type": "container"
       }
     ],
-    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"],
-    "network":"dreamfactory"
+    "ports": [
+      "80/tcp",
+      "443/tcp"
+    ],
+    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
   },
   {
     "title": "Cloud9",
