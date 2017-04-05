@@ -1297,7 +1297,7 @@
   {
     "title": "Apache Kafka",
     "description": "Data Pipelines Distributing Platform",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-kafka.jpg",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-kafka.png",
     "image": "wurstmeister/kafka:latest",
     "volumes": ["/kafka"]
   },
@@ -1327,7 +1327,7 @@
   {
     "title": "Dashbuilder",
     "description": "Elastic Database",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-dashbuilder.jpg",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-dashbuilder.png",
     "image": "jboss/uf-dashbuilder:latest",
     "ports": [
       "8001/tcp"
