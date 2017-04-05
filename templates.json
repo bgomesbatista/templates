@@ -534,5 +534,396 @@
       "9300/tcp"
     ],
     "volumes": ["/var/lib/elasticsearch"]
+  },
+  {
+    "title": "Redash",
+    "description": "Data Visualization",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "redash/redash:latest",
+    "ports": [
+      "5000/tcp",
+      "9001/tcp"
+    ],
+    "volumes": ["/opt/redash"]
+  },
+  {
+    "title": "SpagoBI",
+    "description": "Business Intelligence",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "spagobilabs/spagobi:latest",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": ["/home/SpagoBI/database","/home/MySQL"]
+  },
+  {
+    "title": "RethinkDB",
+    "description": "Realtime Database",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "rethinkdb:latest",
+    "ports": [
+      "28015/tcp",
+      "29015/tcp",
+      "8080/tcp"
+    ],
+    "volumes": ["/data"]
+  },
+  {
+    "title": "Neo4J",
+    "description": "Graph Database",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "neo4j:latest",
+    "ports": [
+      "7473/tcp",
+      "7474/tcp",
+      "7687/tcp"
+    ],
+    "volumes": ["/data"]
+  },
+  {
+    "title": "Alfresco",
+    "description": "Alfresco",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "itherz/alfresco:latest",
+    "ports": [
+      "137/tcp",
+      "138/tcp",
+      "139/tcp",
+      "21/tcp",
+      "445/tcp",
+      "7070/tcp",
+      "8009/tcp",
+      "8080/tcp"
+    ],
+    "volumes": ["/opt/alfresco/alf_data"]
+  },
+  {
+    "title": "InfluxDB",
+    "description": "Datastore Metrics",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "influxdb:latest",
+    "ports": [
+      "8086/tcp"
+    ],
+    "volumes": ["/var/lib/influxdb"]
+  },
+  {
+    "title": "VoltDB",
+    "description": "In-Memory Transactional DB",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "voltdb/voltdb-community:latest",
+    "ports": [
+      "21211/tcp",
+      "21212/tcp",
+      "22/tcp",
+      "3021/tcp",
+      "5555/tcp",
+      "7181/tcp",
+      "8080/tcp",
+      "8081/tcp",
+      "9000/tcp"
+    ],
+    "volumes": ["/var/voltdb"]
+  },
+  {
+    "title": "Minio",
+    "description": "Minio Object Storage",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "minio/minio:latest",
+    "ports": [
+      "9000/tcp"
+    ],
+    "volumes": ["/export"]
+  },
+  {
+    "title": "EXO",
+    "description": "Collaboration Platform",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "exoplatform/exo:latest",
+    "volumes": ["/opt/exo","/etc/exo","/srv/exo"]
+  },
+  {
+    "title": "FileCloud",
+    "description": "File Share for Business",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "filecloud/fileclouddocker:latest",
+    "ports": [
+      "443/tcp",
+      "80/tcp"
+    ],
+    "volumes": ["/cloudstorage","/opt/solr-5.3.1/server/solr/fccore","/var/lib/mongodb"]
+  },
+  {
+    "title": "Crate",
+    "description": "Data Store and Analyze",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "crate:latest",
+    "ports": [
+      "4200/tcp",
+      "4300/tcp"
+    ],
+    "volumes": ["/data"]
+  },
+  {
+    "title": "COZY",
+    "description": "Share Data and Web Services",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "cozy/full:latest",
+    "ports": [
+      "443/tcp",
+      "80/tcp"
+    ],
+    "volumes": ["/etc/cozy","/usr/local/cozy","/usr/local/var/cozy/","/var/lib/couchdb"]
+  },
+  {
+    "title": "Convertigo",
+    "description": "Mobile Platform",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "convertigo:latest",
+    "ports": [
+      "28080/tcp"
+    ],
+    "volumes": ["/workspace"]
+  },
+  {
+    "title": "Celery",
+    "description": "Asynchronous Task Queue",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "celery:latest"
+  },
+  {
+    "title": "ArangoDB",
+    "description": "Multi-Model NoSQL DB",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "celery:latest",
+    "ports": [
+      "8529/tcp"
+    ],
+    "volumes": ["/var/lib/arangodb3","/var/lib/arangodb3-apps"]
+  },
+  {
+    "title": "BlobcityDB",
+    "description": "Realtime Multi-Model DB",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "blobcity/db:latest",
+    "ports": [
+      "10111/tcp",
+      "10113/tcp"
+    ],
+    "volumes": ["/data"]
+  },
+  {
+    "title": "Bonita",
+    "description": "BPM and Workflow",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "bonita:latest",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": ["/opt/bonita"]
+  },
+  {
+    "title": "HBase",
+    "description": "Apache Big Data",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "harisekhon/hbase:latest",
+    "ports": [
+      "16000/tcp",
+      "16010/tcp",
+      "16201/tcp",
+      "16301/tcp",
+      "2181/tcp",
+      "8080/tcp",
+      "8085/tcp",
+      "9090/tcp",
+      "9095/tcp"
+    ]
+  },
+  {
+    "title": "NATS Server",
+    "description": "Cloud Messaging System",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "nats:latest",
+    "ports": [
+      "4222/tcp",
+      "6222/tcp",
+      "8222/tcp"
+    ]
+  },
+  {
+    "title": "Logstash",
+    "description": "Manage Logs and Events",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "logstash:latest"
+  },
+  {
+    "title": "NATS Server",
+    "description": "Cloud Messaging System",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "nats:latest",
+    "ports": [
+      "4222/tcp",
+      "6222/tcp",
+      "8222/tcp"
+    ]
+  },
+  {
+    "title": "MemSQL",
+    "description": "InMemory DataWarehouse",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "memsql/quickstart:latest",
+    "ports": [
+      "3306/tcp",
+      "9000/tcp"
+    ],
+    "volumes": ["/memsql"]
+  },
+  {
+    "title": "Pentaho",
+    "description": "Data Integration and Analytics",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "wmarinho/pentaho-biserver:latest",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": ["/opt/pentaho"]
+  },
+  {
+    "title": "Jasper",
+    "description": "Reports Server",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "monitoringartist/jasperserver-xxl:latest",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": ["/jasperserver"]
+  },
+  {
+    "title": "MODX",
+    "description": "Reports Server",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "kyani/modx:latestt",
+    "ports": [
+      "80/tcp"
+    ]
+  },
+  {
+    "title": "HornetQ",
+    "description": "Messaging System",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "mansante/hornetq:latest",
+    "ports": [
+      "5445/tcp",
+      "5455/tcp"
+    ]
+  },
+  {
+    "title": "MongoExpress",
+    "description": "Web Management",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "mongo-express:latest",
+    "env": [
+      {
+        "name": "ME_CONFIG_MONGODB_SERVER",
+        "label": "MongoDb",
+        "type":"container"
+      },
+      {
+        "name":"ME_CONFIG_MONGODB_ENABLE_ADMIN",
+        "label":"Enable Admin",
+        "set":"true"
+      },
+      {
+        "name":"ME_CONFIG_BASICAUTH_USERNAME",
+        "label":"Mongo Express Username"
+      },
+      {
+        "name":"ME_CONFIG_BASICAUTH_PASSWORD",
+        "label":"Mongo Express Password"
+      },
+      {
+        "name":"ME_CONFIG_OPTIONS_EDITORTHEME",
+        "label":"Editor Theme"
+      }
+    ],
+    "ports": [
+      "8081/tcp"
+    ]
+  },
+  {
+    "title": "DreamFactory",
+    "description": "Official",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "dreamfactorysoftware/df-docker:latest",
+    "ports": [
+      "80/tcp"
+    ]
+  },
+  {
+    "title": "AeroSpike Server",
+    "description": "Operational NoSQL DB",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "aerospike/aerospike-server:latest",
+    "ports": [
+      "3000/tcp",
+      "3001/tcp",
+      "3002/tcp",
+      "3003/tcp"
+    ],
+    "volumes": ["/opt/aerospike/data"]
+  },
+  {
+    "title": "AeroSpike Tools",
+    "description": "Official",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "aerospike/aerospike-tools:latest"
+  },
+  {
+    "title": "Backendless",
+    "description": "Mobile App Backend",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "backendless/alpine-nodejs:latest"
+  },
+  {
+    "title": "Taiga",
+    "description": "Taiga",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "benhutchins/taiga:latest",
+    "ports": [
+      "443/tcp",
+      "80/tcp"
+    ],
+    "volumes": ["/usr/src/taiga-back/media"]
+  },
+  {
+    "title": "Parse Server",
+    "description": "Bitnami - Mobile Backend",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "bitnami/parse:latest",
+    "ports": [
+      "1337/tcp"
+    ],
+    "volumes": ["/bitnami/parse"]
+  },
+  {
+    "title": "Parse Dash",
+    "description": "Bitnami Parse Dashboard",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "bitnami/parse-dashboard:latest",
+    "ports": [
+      "4040/tcp"
+    ],
+    "volumes": ["/bitnami/parse-dashboard"]
+  },
+  {
+    "title": "Jasper Reports",
+    "description": "Bitnami Jasper Reports",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "bitnami/jasperreports:latest",
+    "ports": [
+      "8080/tcp",
+      "8443/tcp"
+    ],
+    "volumes": ["/bitnami/jasperreports"]
   }
 ]
