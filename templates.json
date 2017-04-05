@@ -328,88 +328,9 @@
     "volumes": ["/usr/local/var/lib/couchdb"]
   },
   {
-    "title": "B-MariaDb",
-    "description": "Bitnami Mariadb",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "bitnami/mariadb:latest",
-    "env": [
-      {
-        "name": "ALLOW_EMPTY_PASSWORD",
-        "label": "Allow Empty Password",
-        "set": "yes"
-      }
-    ],
-    "ports": [
-      "3306/tcp"
-    ],
-    "volumes": ["/bitnami/mariadb"]
-  },
-  {
-    "title": "B-MongoDb",
-    "description": "Bitnami MongoDB",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "bitnami/mongodb:latest",
-    "ports": [
-      "27017/tcp"
-    ],
-    "volumes": ["/bitnami/mongodb"]
-  },
-  {
-    "title": "B-Redis",
-    "description": "Bitnami Redis",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "bitnami/redis:latest",
-    "ports": [
-      "6379/tcp"
-    ],
-    "volumes": ["/bitnami/redis"]
-  },
-  {
-    "title": "B-Dreamfactory",
-    "description": "Bitnami Dreamfactory",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "bitnami/dreamfactory:latest",
-    "env": [
-      {
-        "name": "MARIADB_HOST",
-        "label": "Bitnami Maria",
-        "type": "container"
-      },
-      {
-        "name": "MARIADB_PORT",
-        "label": "Maria Port",
-        "set": "3306"
-      },
-      {
-        "name": "MARIADB_ROOT_USER",
-        "label": "Maria Root User",
-        "set": "root"
-      },
-      {
-        "name": "MARIADB_ROOT_PASSWORD",
-        "label": "Maria Root Password"
-      },
-      {
-        "name": "MONGODB_HOST",
-        "label": "Bitnami Mongo",
-        "type": "container"
-      },
-      {
-        "name": "REDIS_HOST",
-        "label": "Bitnami Redis",
-        "type": "container"
-      }
-    ],
-    "ports": [
-      "80/tcp",
-      "443/tcp"
-    ],
-    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
-  },
-  {
     "title": "Cloud9",
     "description": "Cloud Development IDE",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-cloud9.png",
     "image": "sapk/cloud9:latest",
     "ports": [
       "8181/tcp"
@@ -429,7 +350,7 @@
   {
     "title": "Owncloud",
     "description": "File Sync and Share App",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-owncloud.png",
     "image": "owncloud:latest",
     "ports": [
       "80/tcp"
@@ -450,13 +371,13 @@
   {
     "title": "DotNet",
     "description": "Microsoft DotNet",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-dotnet.png",
     "image": "microsoft/dotnet:latest"
   },
   {
     "title": "SQL Server Linux",
     "description": "Microsoft SQL Server Linux",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-sqlserver.png",
     "image": "microsoft/mssql-server-linux:latest",
     "env": [
       {
@@ -476,7 +397,7 @@
   {
     "title": "CouchBase-E",
     "description": "Data Platform Enterprise Edition",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase-alt.png",
     "image": "couchbase:latest",
     "ports": [
       "11207/tcp",
@@ -495,7 +416,7 @@
   {
     "title": "CouchBase-C",
     "description": "Data Platform Community Edition",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase-alt.png",
     "image": "couchbase:community",
     "ports": [
       "11207/tcp",
@@ -512,9 +433,16 @@
     "volumes": ["/opt/couchbase/var"]
   },
   {
+    "title": "CouchBase-M",
+    "description": "Mobile BackEnd Test Kit",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase-alt.png",
+    "image": "couchbase/mobile-testkit:latest",
+    "volumes": ["/opt/mobile-testkit"]
+  },
+  {
     "title": "CouchBase Sync",
     "description": "Mobile Sync Gateway",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase-alt.png",
     "image": "couchbase/sync-gateway:latest",
     "ports": [
       "4984/tcp"
@@ -522,16 +450,9 @@
     "volumes": ["/opt/couchbase-sync-gateway/data"]
   },
   {
-    "title": "CouchBase Mobile",
-    "description": "Mobile BackEnd Test Kit",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "couchbase/mobile-testkit:latest",
-    "volumes": ["/opt/mobile-testkit"]
-  },
-  {
     "title": "Eclipse Che",
     "description": "Bitnami Eclipse Che Express",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-eclipseche.png",
     "image": "bitnami/che-express:latest",
     "env": [
       {
@@ -546,7 +467,7 @@
   {
     "title": "ELK Stack",
     "description": "Elasticsearch, Logstash, and Kiban",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-elk.png",
     "image": "sebp/elk:latest",
     "ports": [
       "5044/tcp",
@@ -570,7 +491,7 @@
   {
     "title": "SpagoBI",
     "description": "Business Intelligence",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-spagobi.png",
     "image": "spagobilabs/spagobi:latest",
     "ports": [
       "8080/tcp"
@@ -580,7 +501,7 @@
   {
     "title": "RethinkDB",
     "description": "Realtime Database",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-rethinkdb.png",
     "image": "rethinkdb:latest",
     "ports": [
       "28015/tcp",
@@ -592,7 +513,7 @@
   {
     "title": "Neo4J",
     "description": "Graph Database",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-neo4j.png",
     "image": "neo4j:latest",
     "ports": [
       "7473/tcp",
@@ -604,7 +525,7 @@
   {
     "title": "Alfresco",
     "description": "BPM and ECM",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-alfresco.png",
     "image": "itherz/alfresco:latest",
     "ports": [
       "137/tcp",
@@ -659,14 +580,14 @@
   {
     "title": "EXO",
     "description": "Collaboration Platform",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-exo.png",
     "image": "exoplatform/exo:latest",
     "volumes": ["/opt/exo","/etc/exo","/srv/exo"]
   },
   {
     "title": "FileCloud",
     "description": "File Share for Business",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-filecloud.png",
     "image": "filecloud/fileclouddocker:latest",
     "ports": [
       "443/tcp",
@@ -688,7 +609,7 @@
   {
     "title": "COZY",
     "description": "Share Data and Web Services",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-cozy.png",
     "image": "cozy/full:latest",
     "ports": [
       "443/tcp",
@@ -699,7 +620,7 @@
   {
     "title": "Convertigo",
     "description": "Mobile Platform",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-convertigo.png",
     "image": "convertigo:latest",
     "ports": [
       "28080/tcp"
@@ -736,7 +657,7 @@
   {
     "title": "Bonita",
     "description": "BPM and Workflow",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bonita.png",
     "image": "bonita:latest",
     "ports": [
       "8080/tcp"
@@ -746,7 +667,7 @@
   {
     "title": "HBase",
     "description": "Apache Big Data",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-hbase.png",
     "image": "harisekhon/hbase:latest",
     "ports": [
       "16000/tcp",
@@ -780,7 +701,7 @@
   {
     "title": "MemCached",
     "description": "Object Caching System",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-memcached.png",
     "image": "memcached:latest",
     "ports": [
       "11211/tcp"
@@ -789,7 +710,7 @@
   {
     "title": "MemSQL",
     "description": "InMemory DataWarehouse",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-memsql.png",
     "image": "memsql/quickstart:latest",
     "ports": [
       "3306/tcp",
@@ -800,7 +721,7 @@
   {
     "title": "Pentaho",
     "description": "Data Integration and Analytics",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-pentaho.png",
     "image": "wmarinho/pentaho-biserver:latest",
     "ports": [
       "8080/tcp"
@@ -820,7 +741,7 @@
   {
     "title": "MODX",
     "description": "Reports Server",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-modx.png",
     "image": "kyani/modx:latestt",
     "ports": [
       "80/tcp"
@@ -872,7 +793,7 @@
   {
     "title": "DreamFactory",
     "description": "Official",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-dreamfactory.png",
     "image": "dreamfactorysoftware/df-docker:latest",
     "ports": [
       "80/tcp"
@@ -915,9 +836,88 @@
     "volumes": ["/usr/src/taiga-back/media"]
   },
   {
+    "title": "MariaDb",
+    "description": "Bitnami Mariadb",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
+    "image": "bitnami/mariadb:latest",
+    "env": [
+      {
+        "name": "ALLOW_EMPTY_PASSWORD",
+        "label": "Allow Empty Password",
+        "set": "yes"
+      }
+    ],
+    "ports": [
+      "3306/tcp"
+    ],
+    "volumes": ["/bitnami/mariadb"]
+  },
+  {
+    "title": "MongoDb",
+    "description": "Bitnami MongoDB",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
+    "image": "bitnami/mongodb:latest",
+    "ports": [
+      "27017/tcp"
+    ],
+    "volumes": ["/bitnami/mongodb"]
+  },
+  {
+    "title": "Redis",
+    "description": "Bitnami Redis",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
+    "image": "bitnami/redis:latest",
+    "ports": [
+      "6379/tcp"
+    ],
+    "volumes": ["/bitnami/redis"]
+  },
+  {
+    "title": "Dreamfactory",
+    "description": "Bitnami Dreamfactory",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
+    "image": "bitnami/dreamfactory:latest",
+    "env": [
+      {
+        "name": "MARIADB_HOST",
+        "label": "Bitnami Maria",
+        "type": "container"
+      },
+      {
+        "name": "MARIADB_PORT",
+        "label": "Maria Port",
+        "set": "3306"
+      },
+      {
+        "name": "MARIADB_ROOT_USER",
+        "label": "Maria Root User",
+        "set": "root"
+      },
+      {
+        "name": "MARIADB_ROOT_PASSWORD",
+        "label": "Maria Root Password"
+      },
+      {
+        "name": "MONGODB_HOST",
+        "label": "Bitnami Mongo",
+        "type": "container"
+      },
+      {
+        "name": "REDIS_HOST",
+        "label": "Bitnami Redis",
+        "type": "container"
+      }
+    ],
+    "ports": [
+      "80/tcp",
+      "443/tcp"
+    ],
+    "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
+  },
+  {
     "title": "Parse Server",
     "description": "Bitnami - Mobile Backend",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
     "image": "bitnami/parse:latest",
     "ports": [
       "1337/tcp"
@@ -927,7 +927,7 @@
   {
     "title": "Parse Dash",
     "description": "Bitnami Parse Dashboard",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
     "image": "bitnami/parse-dashboard:latest",
     "ports": [
       "4040/tcp"
@@ -937,7 +937,7 @@
   {
     "title": "Jasper Reports",
     "description": "Bitnami Jasper Reports",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
     "image": "bitnami/jasperreports:latest",
     "ports": [
       "8080/tcp",
@@ -948,7 +948,7 @@
   {
     "title": "ExpressJS",
     "description": "Bitnami NodeJS REST API",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
     "image": "bitnami/express:latest",
     "ports": [
       "3000/tcp"
@@ -957,13 +957,13 @@
   {
     "title": "Cloudera",
     "description": "Big Data, Machine Learning, Analytics",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-cloudera.png",
     "image": "cloudera/quickstart:latest"
   },
   {
     "title": "Samba",
     "description": "Linux/Windows File Sharing",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-samba.png",
     "image": "dperson/samba:latest",
     "ports": [
       "137/tcp",
@@ -993,7 +993,7 @@
   {
     "title": "NextCloud",
     "description": "Access, Share, and Protect Files",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-nextcloud.png",
     "image": "nextcloud:latest",
     "ports": [
       "80/tcp"
@@ -1003,7 +1003,7 @@
   {
     "title": "PiWik",
     "description": "Analytics Platform",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-piwik.png",
     "image": "piwik:latest",
     "ports": [
       "9000/tcp"
@@ -1055,7 +1055,7 @@
   {
     "title": "Apache Hive",
     "description": "Data Warehouse Infrastructure With Hadoop",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-hive.png",
     "image": "mcapitanio/hive:latest",
     "ports": [
       "9083/tcp",
@@ -1068,7 +1068,7 @@
   {
     "title": "Apache Phoenix",
     "description": "OLTP and Analytics for Haddoop with HBase",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-phoenix.png",
     "image": "sequenceiq/phoenix:latest",
     "ports": [
       "8765/tcp"
@@ -1099,14 +1099,14 @@
   {
     "title": "Apache Storm",
     "description": "Apache Messaging System",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-storm.png",
     "image": "storm:latest",
     "volumes": ["/data","/logs","/conf"]
   },
   {
     "title": "Apache Spark",
     "description": "Apache Messaging System",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-spark.png",
     "image": "sequenceiq/spark:latest",
     "ports": [
       "22/tcp",
@@ -1163,7 +1163,7 @@
   {
     "title": "Apache Hadoop",
     "description": "Systems Data Workflow Automation",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-hadoop.png",
     "image": "sequenceiq/hadoop-docker:latest",
     "ports": [
       "50010/tcp",
@@ -1186,7 +1186,7 @@
   {
     "title": "Apache Maven",
     "description": "Software PM and Documentation",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-maven.png",
     "image": "maven:latest",
     "volumes": ["/usr/src/mymaven"]
   },
@@ -1261,7 +1261,7 @@
   {
     "title": "Apache Ignite",
     "description": "In-Memory Computing Platform",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-ignite.png",
     "image": "apacheignite/ignite:latest",
     "ports": [
       "11211/tcp",
@@ -1283,7 +1283,7 @@
   {
     "title": "Cassandra",
     "description": "Apache Big Data Database",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-cassandra.png",
     "image": "cassandra:latest",
     "ports": [
       "7000/tcp",
@@ -1297,7 +1297,7 @@
   {
     "title": "NuoDB",
     "description": "Elastic Database",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-nuodb.png",
     "image": "kakawait/nuodb-with-ecosystem:latest",
     "ports": [
       "48004/tcp",
@@ -1314,7 +1314,7 @@
   {
     "title": "Kubernetes",
     "description": "Docker Orchestration",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-kubernetes.png",
     "image": "cockpit/kubernetes:latest"
   }
 ]
