@@ -117,7 +117,7 @@
   },
   {
    "title": "Cordova",
-   "description": "Mobile Apps With HTML5,
+   "description": "Mobile Apps With HTML5",
    "logo": "https://cloudinovasi.id/assets/img/logos/minio.png",
    "image": "beevelop/cordova:latest"
  },
@@ -995,5 +995,5 @@
       "8161/tcp"
     ],
     "volumes": ["/data/activemq","/opt/activemq/conf","/var/log/activemq"]
-  },
+  }
 ]
