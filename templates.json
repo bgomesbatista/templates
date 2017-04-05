@@ -116,25 +116,10 @@
     "volumes": ["/usr/share/elasticsearch/data"]
   },
   {
-   "title": "Minio",
-   "description": "A distributed object storage server built for cloud applications and devops",
+   "title": "Cordova",
+   "description": "Mobile Apps With HTML5,
    "logo": "https://cloudinovasi.id/assets/img/logos/minio.png",
-   "image": "minio/minio:latest",
-   "ports": [
-     "9000/tcp"
-   ],
-   "env": [
-     {
-       "name": "MINIO_ACCESS_KEY",
-       "label": "Minio access key"
-     },
-     {
-       "name": "MINIO_SECRET_KEY",
-       "label": "Minio secret key"
-     }
-   ],
-   "volumes": ["/export", "/root/.minio"],
-   "command": "server /export"
+   "image": "beevelop/cordova:latest"
  },
   {
     "title": "Solr",
@@ -423,7 +408,7 @@
   },
   {
     "title": "Cloud9",
-    "description": "Cloud9",
+    "description": "Cloud Development IDE",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "sapk/cloud9:latest",
     "ports": [
@@ -433,7 +418,7 @@
   },
   {
     "title": "XWiki",
-    "description": "Xwiki",
+    "description": "Enterprise Wiki",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "xwiki:latest",
     "ports": [
@@ -443,7 +428,7 @@
   },
   {
     "title": "Owncloud",
-    "description": "Owncloud",
+    "description": "File Sync and Share App",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "owncloud:latest",
     "ports": [
@@ -453,7 +438,7 @@
   },
   {
     "title": "OrientDb",
-    "description": "OrientDb",
+    "description": "Multi-Model And Graph DB",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "orientdb:latest",
     "ports": [
@@ -490,7 +475,7 @@
   },
   {
     "title": "CouchBase",
-    "description": "CouchBase DB",
+    "description": "Data Platform",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "couchbase:latest",
     "ports": [
@@ -523,8 +508,8 @@
     ]
   },
   {
-    "title": "ELK",
-    "description": "ELK",
+    "title": "ELK Stack",
+    "description": "Elasticsearch, Logstash, and Kiban",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "sebp/elk:latest",
     "ports": [
@@ -582,7 +567,7 @@
   },
   {
     "title": "Alfresco",
-    "description": "Alfresco",
+    "description": "BPM and ECM",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "itherz/alfresco:latest",
     "ports": [
@@ -627,7 +612,7 @@
   },
   {
     "title": "Minio",
-    "description": "Minio Object Storage",
+    "description": "Object Storage",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "minio/minio:latest",
     "ports": [
@@ -654,8 +639,8 @@
     "volumes": ["/cloudstorage","/opt/solr-5.3.1/server/solr/fccore","/var/lib/mongodb"]
   },
   {
-    "title": "Crate",
-    "description": "Data Store and Analyze",
+    "title": "CrateDB",
+    "description": "Data Store and Analysis",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "crate:latest",
     "ports": [
@@ -757,14 +742,12 @@
     "image": "logstash:latest"
   },
   {
-    "title": "NATS Server",
-    "description": "Cloud Messaging System",
+    "title": "MemCached",
+    "description": "Object Caching System",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
-    "image": "nats:latest",
+    "image": "memcached:latest",
     "ports": [
-      "4222/tcp",
-      "6222/tcp",
-      "8222/tcp"
+      "11211/tcp"
     ]
   },
   {
@@ -809,7 +792,7 @@
   },
   {
     "title": "HornetQ",
-    "description": "Messaging System",
+    "description": "JBoss Messaging System",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "mansante/hornetq:latest",
     "ports": [
@@ -860,8 +843,8 @@
     ]
   },
   {
-    "title": "AeroSpike Server",
-    "description": "Operational NoSQL DB",
+    "title": "AeroSpike DB",
+    "description": "Realtime Operational NoSQL DB",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "aerospike/aerospike-server:latest",
     "ports": [
@@ -925,5 +908,92 @@
       "8443/tcp"
     ],
     "volumes": ["/bitnami/jasperreports"]
-  }
+  },
+  {
+    "title": "ExpressJS",
+    "description": "Bitnami NodeJS REST API",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "bitnami/express:latest",
+    "ports": [
+      "3000/tcp"
+    ]
+  },
+  {
+    "title": "Cloudera",
+    "description": "Big Data, Machine Learning, Analytics",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "cloudera/quickstart:latest"
+  },
+  {
+    "title": "Samba",
+    "description": "Linux/Windows File Sharing",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "dperson/samba:latest",
+    "ports": [
+      "137/tcp",
+      "138/tcp",
+      "139/tcp",
+      "140/tcp"
+    ],
+    "volumes": ["/etc/samba"]
+  },
+  {
+    "title": "Discourse",
+    "description": "Discussion Platform",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "discourse/discourse:1.3.10"
+  },
+  {
+    "title": "IKEV2 VPN",
+    "description": "VPN Server",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "gaomd/ikev2-vpn-server:latest",
+    "ports": [
+      "45000/tcp",
+      "500/tcp"
+    ],
+    "volumes": ["/etc"]
+  },
+  {
+    "title": "NextCloud",
+    "description": "Access, Share, and Protect Files",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "nextcloud:latest",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": ["/var/www/html"]
+  },
+  {
+    "title": "PiWik",
+    "description": "Analytics Platform",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "piwik:latest",
+    "ports": [
+      "9000/tcp"
+    ],
+    "volumes": ["/var/www/html"]
+  },
+  {
+    "title": "Postgres-XL",
+    "description": "PostgreSQL XL",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "tiredpixel/postgres-xl:latest",
+    "volumes": ["/etc/ssh","/var/lib/postgres","/var/lib/postgres/.ssh"]
+  },
+  {
+    "title": "ActiveMQ",
+    "description": "Apache Messaging System",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "webcenter/activemq:latest",
+    "ports": [
+      "1883/tcp",
+      "5672/tcp",
+      "61613/tcp",
+      "61614/tcp",
+      "61616/tcp",
+      "8161/tcp"
+    ],
+    "volumes": ["/data/activemq","/opt/activemq/conf","/var/log/activemq"]
+  },
 ]
