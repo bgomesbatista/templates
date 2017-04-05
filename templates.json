@@ -340,7 +340,7 @@
   {
     "title": "XWiki",
     "description": "Enterprise Wiki",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-xwiki.png",
     "image": "xwiki:latest",
     "ports": [
       "8080/tcp"
@@ -360,7 +360,7 @@
   {
     "title": "OrientDb",
     "description": "Multi-Model And Graph DB",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-orientdb.png",
     "image": "orientdb:latest",
     "ports": [
       "2424/tcp",
@@ -397,7 +397,7 @@
   {
     "title": "CouchBase-E",
     "description": "Data Platform Enterprise Edition",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase-alt.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase.png",
     "image": "couchbase:latest",
     "ports": [
       "11207/tcp",
@@ -416,7 +416,7 @@
   {
     "title": "CouchBase-C",
     "description": "Data Platform Community Edition",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase-alt.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase.png",
     "image": "couchbase:community",
     "ports": [
       "11207/tcp",
@@ -435,14 +435,14 @@
   {
     "title": "CouchBase-M",
     "description": "Mobile BackEnd Test Kit",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase-alt.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase.png",
     "image": "couchbase/mobile-testkit:latest",
     "volumes": ["/opt/mobile-testkit"]
   },
   {
     "title": "CouchBase Sync",
     "description": "Mobile Sync Gateway",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase-alt.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-couchbase.png",
     "image": "couchbase/sync-gateway:latest",
     "ports": [
       "4984/tcp"
@@ -480,7 +480,7 @@
   {
     "title": "Redash",
     "description": "Data Visualization",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-redash.png",
     "image": "redash/redash:latest",
     "ports": [
       "5000/tcp",
@@ -542,7 +542,7 @@
   {
     "title": "InfluxDB",
     "description": "Datastore Metrics",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-influxdb.png",
     "image": "influxdb:latest",
     "ports": [
       "8086/tcp"
@@ -552,7 +552,7 @@
   {
     "title": "VoltDB",
     "description": "In-Memory Transactional DB",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-voltdb.png",
     "image": "voltdb/voltdb-community:latest",
     "ports": [
       "21211/tcp",
@@ -570,7 +570,7 @@
   {
     "title": "Minio",
     "description": "Object Storage",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "minio/minio:latest",
     "ports": [
       "9000/tcp"
@@ -598,7 +598,7 @@
   {
     "title": "CrateDB",
     "description": "Data Store and Analysis",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "crate:latest",
     "ports": [
       "4200/tcp",
@@ -630,13 +630,13 @@
   {
     "title": "Celery",
     "description": "Asynchronous Task Queue",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "celery:latest"
   },
   {
     "title": "ArangoDB",
     "description": "Multi-Model NoSQL DB",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "celery:latest",
     "ports": [
       "8529/tcp"
@@ -646,7 +646,7 @@
   {
     "title": "BlobcityDB",
     "description": "Realtime Multi-Model DB",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "blobcity/db:latest",
     "ports": [
       "10111/tcp",
@@ -667,7 +667,7 @@
   {
     "title": "HBase",
     "description": "Apache Big Data",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-hbase.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-hbase.jpg",
     "image": "harisekhon/hbase:latest",
     "ports": [
       "16000/tcp",
@@ -684,7 +684,7 @@
   {
     "title": "NATS Server",
     "description": "Cloud Messaging System",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-nats.png",
     "image": "nats:latest",
     "ports": [
       "4222/tcp",
@@ -695,7 +695,7 @@
   {
     "title": "Logstash",
     "description": "Manage Logs and Events",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "logstash:latest"
   },
   {
@@ -710,7 +710,7 @@
   {
     "title": "MemSQL",
     "description": "InMemory DataWarehouse",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-memsql.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-memsql.jpg",
     "image": "memsql/quickstart:latest",
     "ports": [
       "3306/tcp",
@@ -731,7 +731,7 @@
   {
     "title": "Jasper",
     "description": "Reports Server",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "monitoringartist/jasperserver-xxl:latest",
     "ports": [
       "8080/tcp"
@@ -741,7 +741,7 @@
   {
     "title": "MODX",
     "description": "Reports Server",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-modx.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-modx.jpg",
     "image": "kyani/modx:latestt",
     "ports": [
       "80/tcp"
@@ -750,7 +750,7 @@
   {
     "title": "HornetQ",
     "description": "JBoss Messaging System",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "mansante/hornetq:latest",
     "ports": [
       "5445/tcp",
@@ -760,7 +760,7 @@
   {
     "title": "MongoExpress",
     "description": "Web Management",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "mongo-express:latest",
     "env": [
       {
@@ -793,7 +793,7 @@
   {
     "title": "DreamFactory",
     "description": "Official",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-dreamfactory.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-dreamfactory.jpg",
     "image": "dreamfactorysoftware/df-docker:latest",
     "ports": [
       "80/tcp"
@@ -802,7 +802,7 @@
   {
     "title": "AeroSpike DB",
     "description": "Realtime Operational NoSQL DB",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-aerospike.png",
     "image": "aerospike/aerospike-server:latest",
     "ports": [
       "3000/tcp",
@@ -815,19 +815,19 @@
   {
     "title": "AeroSpike Tools",
     "description": "Official",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-aerospike.png",
     "image": "aerospike/aerospike-tools:latest"
   },
   {
     "title": "Backendless",
     "description": "Mobile App Backend",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-backendless.png",
     "image": "backendless/alpine-nodejs:latest"
   },
   {
     "title": "Taiga",
     "description": "Taiga",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "benhutchins/taiga:latest",
     "ports": [
       "443/tcp",
@@ -976,13 +976,13 @@
   {
     "title": "Discourse",
     "description": "Discussion Platform",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "discourse/discourse:1.3.10"
   },
   {
     "title": "IKEV2 VPN",
     "description": "VPN Server",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "gaomd/ikev2-vpn-server:latest",
     "ports": [
       "45000/tcp",
@@ -1003,7 +1003,7 @@
   {
     "title": "PiWik",
     "description": "Analytics Platform",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-piwik.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-piwik.jpg",
     "image": "piwik:latest",
     "ports": [
       "9000/tcp"
@@ -1013,14 +1013,14 @@
   {
     "title": "Postgres-XL",
     "description": "PostgreSQL XL",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-postgresxl.jpg",
     "image": "tiredpixel/postgres-xl:latest",
     "volumes": ["/etc/ssh","/var/lib/postgres","/var/lib/postgres/.ssh"]
   },
   {
     "title": "ActiveMQ",
     "description": "Apache Messaging System",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "webcenter/activemq:latest",
     "ports": [
       "1883/tcp",
@@ -1035,7 +1035,7 @@
   {
     "title": "Apache Drill",
     "description": "Schema-free SQL Engine for NoSQL",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-drill.png",
     "image": "harisekhon/apache-drill:latest",
     "env": [
       {
@@ -1055,7 +1055,7 @@
   {
     "title": "Apache Hive",
     "description": "Data Warehouse Infrastructure With Hadoop",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-hive.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-hive.jpeg",
     "image": "mcapitanio/hive:latest",
     "ports": [
       "9083/tcp",
@@ -1068,7 +1068,7 @@
   {
     "title": "Apache Phoenix",
     "description": "OLTP and Analytics for Haddoop with HBase",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-phoenix.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-phoenix.jpg",
     "image": "sequenceiq/phoenix:latest",
     "ports": [
       "8765/tcp"
@@ -1076,9 +1076,9 @@
     "volumes": ["/etc","/usr/local/phoenix","/usr/local/zookeeper","/usr/local/hbase"]
   },
   {
-    "title": "Apache Zookeeper",
-    "description": "Distributed Systems Coordination",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "title": "Zookeeper",
+    "description": "Apache Distributed Systems Coordination",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-zookeeper.png",
     "image": "zookeeper:latest",
     "env": [
       {
@@ -1129,14 +1129,14 @@
   {
     "title": "Apache Mahout",
     "description": "Machine Learning and Data Mining",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-mahout.png",
     "image": "borromeotlhs/docker-mahout:latest",
     "volumes": ["/usr/local/mahout","/usr/local/hadoop"]
   },
   {
     "title": "Apache NiFi",
     "description": "Systems Data Workflow Automation",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-nifi.png",
     "image": "xemuliam/nifi:latest",
     "ports": [
       "8080/tcp",
@@ -1193,14 +1193,14 @@
   {
     "title": "Apache Pig",
     "description": "Software PM and Documentation",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "tinchou/apache-pig:latest",
     "volumes": ["/code"]
   },
   {
     "title": "Apache Reef",
     "description": "Big Data stdlib REEF for Hadoop",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-reef.png",
     "image": "reefrt/apache2.7:latest",
     "ports": [
       "22/tcp",
@@ -1226,7 +1226,7 @@
   {
     "title": "AsterixDB",
     "description": "Apache Big Data Management System",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "kevincoakley/asterixdb:latest",
     "ports": [
       "19001/tcp",
@@ -1237,7 +1237,7 @@
   {
     "title": "ServiceMix",
     "description": "SOA Enterprise Service Bus",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-servicemix.png",
     "image": "mkroli/servicemix:latest",
     "ports": [
       "1099/tcp",
@@ -1252,7 +1252,7 @@
   {
     "title": "CloudStack",
     "description": "Apache Cloud Computing Management",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "cloudstack/simulator:latest",
     "ports": [
       "8088/tcp"
@@ -1274,7 +1274,7 @@
   {
     "title": "MetaModel",
     "description": "Apache Metadata and Data Sources Query",
-    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-metamodel.png",
     "image": "kaspersor/metamodel:latest",
     "ports": [
       "8088/tcp"
@@ -1295,9 +1295,16 @@
     "volumes": ["/var/lib/cassandra"]
   },
   {
+    "title": "Apache Kafka",
+    "description": "Data Pipelines Distributing Platform",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-kafka.jpg",
+    "image": "wurstmeister/kafka:latest",
+    "volumes": ["/kafka"]
+  },
+  {
     "title": "NuoDB",
     "description": "Elastic Database",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-nuodb.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-nuodb.jpg",
     "image": "kakawait/nuodb-with-ecosystem:latest",
     "ports": [
       "48004/tcp",
@@ -1316,5 +1323,14 @@
     "description": "Docker Orchestration",
     "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-kubernetes.png",
     "image": "cockpit/kubernetes:latest"
+  },
+  {
+    "title": "Dashbuilder",
+    "description": "Elastic Database",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-dashbuilder.jpg",
+    "image": "jboss/uf-dashbuilder:latest",
+    "ports": [
+      "8001/tcp"
+    ]
   }
 ]
