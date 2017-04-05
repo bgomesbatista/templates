@@ -338,6 +338,17 @@
     "volumes": ["/workspace"]
   },
   {
+    "title": "Eclipse Che",
+    "description": "Official Eclipse Che",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-eclipseche.png",
+    "image": "eclipse/che:latest",
+    "ports": [
+      "8080/tcp",
+      "8000/tcp"
+    ],
+    "volumes": ["/data", "/data eclipse/che"]
+  },
+  {
     "title": "XWiki",
     "description": "Enterprise Wiki",
     "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-xwiki.png",
@@ -448,21 +459,6 @@
       "4984/tcp"
     ],
     "volumes": ["/opt/couchbase-sync-gateway/data"]
-  },
-  {
-    "title": "Eclipse Che",
-    "description": "Bitnami Eclipse Che Express",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-eclipseche.png",
-    "image": "bitnami/che-express:latest",
-    "env": [
-      {
-        "name": "DATABASE_URL",
-        "label": "MongoDb URL"
-      }
-    ],
-    "ports": [
-      "3000/tcp"
-    ]
   },
   {
     "title": "ELK Stack",
@@ -913,6 +909,21 @@
       "443/tcp"
     ],
     "volumes": ["/bitnami/apache","/bitnami/dreamfactory ","/bitnami/php"]
+  },
+  {
+    "title": "Che Express",
+    "description": "Bitnami Eclipse Che Express",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-bitnami.png",
+    "image": "bitnami/che-express:latest",
+    "ports": [
+      "8000/tcp",
+      "8080/tcp",
+      "3000/tcp",
+      "27017/tcp",
+      "80/tcp",
+      "443/tcp"
+    ],
+    "volumes": ["/app","/projects"]
   },
   {
     "title": "Parse Server",
