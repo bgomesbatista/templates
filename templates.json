@@ -474,8 +474,8 @@
     ]
   },
   {
-    "title": "CouchBase",
-    "description": "Data Platform",
+    "title": "CouchBase-E",
+    "description": "Data Platform Enterprise Edition",
     "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
     "image": "couchbase:latest",
     "ports": [
@@ -491,6 +491,42 @@
       "8094/tcp"
     ],
     "volumes": ["/opt/couchbase/var"]
+  },
+  {
+    "title": "CouchBase-C",
+    "description": "Data Platform Community Edition",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "couchbase:community",
+    "ports": [
+      "11207/tcp",
+      "11210/tcp",
+      "11211/tcp",
+      "18091/tcp",
+      "18092/tcp",
+      "18093/tcp",
+      "8091/tcp",
+      "8092/tcp",
+      "8093/tcp",
+      "8094/tcp"
+    ],
+    "volumes": ["/opt/couchbase/var"]
+  },
+  {
+    "title": "CouchBase Sync",
+    "description": "Mobile Sync Gateway",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "couchbase/sync-gateway:latest",
+    "ports": [
+      "4984/tcp"
+    ],
+    "volumes": ["/opt/couchbase-sync-gateway/data"]
+  },
+  {
+    "title": "CouchBase Mobile",
+    "description": "Mobile BackEnd Test Kit",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "couchbase/mobile-testkit:latest",
+    "volumes": ["/opt/mobile-testkit"]
   },
   {
     "title": "Eclipse Che",
