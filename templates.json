@@ -570,7 +570,7 @@
   {
     "title": "Minio",
     "description": "Object Storage",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-minio.png",
     "image": "minio/minio:latest",
     "ports": [
       "9000/tcp"
@@ -598,7 +598,7 @@
   {
     "title": "CrateDB",
     "description": "Data Store and Analysis",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-cratedb.png",
     "image": "crate:latest",
     "ports": [
       "4200/tcp",
@@ -630,13 +630,13 @@
   {
     "title": "Celery",
     "description": "Asynchronous Task Queue",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-celery.png",
     "image": "celery:latest"
   },
   {
     "title": "ArangoDB",
     "description": "Multi-Model NoSQL DB",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-arangodb.png",
     "image": "celery:latest",
     "ports": [
       "8529/tcp"
@@ -646,7 +646,7 @@
   {
     "title": "BlobcityDB",
     "description": "Realtime Multi-Model DB",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-blobcitydb.png",
     "image": "blobcity/db:latest",
     "ports": [
       "10111/tcp",
@@ -695,7 +695,7 @@
   {
     "title": "Logstash",
     "description": "Manage Logs and Events",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-logstash.png",
     "image": "logstash:latest"
   },
   {
@@ -731,7 +731,7 @@
   {
     "title": "Jasper",
     "description": "Reports Server",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-jasper.png",
     "image": "monitoringartist/jasperserver-xxl:latest",
     "ports": [
       "8080/tcp"
@@ -750,7 +750,7 @@
   {
     "title": "HornetQ",
     "description": "JBoss Messaging System",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-hornetq.png",
     "image": "mansante/hornetq:latest",
     "ports": [
       "5445/tcp",
@@ -827,7 +827,7 @@
   {
     "title": "Taiga",
     "description": "Taiga",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-taiga.png",
     "image": "benhutchins/taiga:latest",
     "ports": [
       "443/tcp",
@@ -976,7 +976,7 @@
   {
     "title": "Discourse",
     "description": "Discussion Platform",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-discourse.png",
     "image": "discourse/discourse:1.3.10"
   },
   {
@@ -1020,7 +1020,7 @@
   {
     "title": "ActiveMQ",
     "description": "Apache Messaging System",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-activemq.png",
     "image": "webcenter/activemq:latest",
     "ports": [
       "1883/tcp",
@@ -1193,7 +1193,7 @@
   {
     "title": "Apache Pig",
     "description": "Software PM and Documentation",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-pig.png",
     "image": "tinchou/apache-pig:latest",
     "volumes": ["/code"]
   },
@@ -1252,7 +1252,7 @@
   {
     "title": "CloudStack",
     "description": "Apache Cloud Computing Management",
-    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-cloudstack.png",
     "image": "cloudstack/simulator:latest",
     "ports": [
       "8088/tcp"
