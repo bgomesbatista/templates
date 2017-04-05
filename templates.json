@@ -339,14 +339,13 @@
   },
   {
     "title": "Eclipse Che",
-    "description": "Official Eclipse Che",
+    "description": "Official Eclipse Che Server",
     "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-eclipseche.png",
-    "image": "eclipse/che:latest",
+    "image": "eclipse/che-server:latest",
     "ports": [
-      "8080/tcp",
-      "8000/tcp"
+      "8080/tcp"
     ],
-    "volumes": ["/data", "/data eclipse/che"]
+    "volumes": ["/var/run/docker.sock","/data","/conf","/assembly"]
   },
   {
     "title": "XWiki",
