@@ -352,6 +352,25 @@
     "description": "Enterprise Wiki",
     "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-xwiki.png",
     "image": "xwiki:latest",
+    "env": [
+      {
+        "name": "DB_HOST",
+        "label": "PostgreSQL database host",
+        "type": "container"
+      },
+      {
+        "name": "DB_DATABASE",
+        "label": "PostgreSQL Database"
+      },
+      {
+        "name": "DB_USER",
+        "label": "PostgreSQL User"
+      },
+      {
+        "name": "DB_PASSWORD",
+        "label": "PostgreSQL Password"
+      }
+    ],
     "ports": [
       "8080/tcp"
     ],
