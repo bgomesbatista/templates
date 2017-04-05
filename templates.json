@@ -995,5 +995,290 @@
       "8161/tcp"
     ],
     "volumes": ["/data/activemq","/opt/activemq/conf","/var/log/activemq"]
+  },
+  {
+    "title": "Apache Drill",
+    "description": "Schema-free SQL Engine for NoSQL",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "harisekhon/apache-drill:latest",
+    "env": [
+      {
+        "name": "ZOOKEEPER_HOST",
+        "label": "Zookeeper",
+        "type":"container"
+      },
+      {
+        "name":"DRILL_HEAP",
+        "label":"Heap (900M)"
+      }
+    ],
+    "ports": [
+      "8047/tcp"
+    ]
+  },
+  {
+    "title": "Apache Hive",
+    "description": "Data Warehouse Infrastructure With Hadoop",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "mcapitanio/hive:latest",
+    "ports": [
+      "9083/tcp",
+      "10000/tcp",
+      "10002/tcp",
+      "50111/tcp"
+    ],
+    "volumes": ["/opt/hive/conf","/opt/hive/logs"]
+  },
+  {
+    "title": "Apache Phoenix",
+    "description": "OLTP and Analytics for Haddoop with HBase",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "sequenceiq/phoenix:latest",
+    "ports": [
+      "8765/tcp"
+    ],
+    "volumes": ["/etc","/usr/local/phoenix","/usr/local/zookeeper","/usr/local/hbase"]
+  },
+  {
+    "title": "Apache Zookeeper",
+    "description": "Distributed Systems Coordination",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "zookeeper:latest",
+    "env": [
+      {
+        "name": "ZOOKEEPER_HOST",
+        "label": "Zookeeper",
+        "type":"container"
+      },
+      {
+        "name":"DRILL_HEAP",
+        "label":"Heap (900M)"
+      }
+    ],
+    "ports": [
+      "8047/tcp"
+    ],
+    "volumes":["/data","/datalog","/conf"]
+  },
+  {
+    "title": "Apache Storm",
+    "description": "Apache Messaging System",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "storm:latest",
+    "volumes": ["/data","/logs","/conf"]
+  },
+  {
+    "title": "Apache Spark",
+    "description": "Apache Messaging System",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "sequenceiq/spark:latest",
+    "ports": [
+      "22/tcp",
+      "49707/tcp",
+      "50010/tcp",
+      "50020/tcp",
+      "50070/tcp",
+      "50075/tcp",
+      "50090/tcp",
+      "8030/tcp",
+      "8031/tcp",
+      "8032/tcp",
+      "8033/tcp",
+      "8040/tcp",
+      "8042/tcp",
+      "8088/tcp"
+    ],
+    "volumes": ["/usr/local/hadoop","/usr/local/spark"]
+  },
+  {
+    "title": "Apache Mahout",
+    "description": "Machine Learning and Data Mining",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "borromeotlhs/docker-mahout:latest",
+    "volumes": ["/usr/local/mahout","/usr/local/hadoop"]
+  },
+  {
+    "title": "Apache NiFi",
+    "description": "Systems Data Workflow Automation",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "xemuliam/nifi:latest",
+    "ports": [
+      "8080/tcp",
+      "8443/tcp",
+      "8081/tcp",
+      "2883/tcp",
+      "2881/tcp",
+      "2882/tcp",
+      "2181/tcp",
+      "2888/tcp",
+      "3888/tcp"
+    ],
+    "volumes": [
+      "/opt/nifi/logs",
+      "/opt/nifi/flowfile_repository",
+      "/opt/nifi/database_repository",
+      "/opt/nifi/content_repository",
+      "/opt/nifi/provenance_repository",
+      "/opt/datafiles",
+      "/opt/scriptfiles",
+      "/opt/certfiles"
+    ]
+  },
+  {
+    "title": "Apache Hadoop",
+    "description": "Systems Data Workflow Automation",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "sequenceiq/hadoop-docker:latest",
+    "ports": [
+      "50010/tcp",
+      "50020/tcp",
+      "50070/tcp",
+      "50075/tcp",
+      "50090/tcp",
+      "19888/tcp",
+      "8030/tcp",
+      "8031/tcp",
+      "8032/tcp",
+      "8033/tcp",
+      "8040/tcp",
+      "8042/tcp",
+      "8088/tcp",
+      "2122/tcp",
+      "49707/tcp"
+    ]
+  },
+  {
+    "title": "Apache Maven",
+    "description": "Software PM and Documentation",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "maven:latest",
+    "volumes": ["/usr/src/mymaven"]
+  },
+  {
+    "title": "Apache Pig",
+    "description": "Software PM and Documentation",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "tinchou/apache-pig:latest",
+    "volumes": ["/code"]
+  },
+  {
+    "title": "Apache Reef",
+    "description": "Big Data stdlib REEF for Hadoop",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "reefrt/apache2.7:latest",
+    "ports": [
+      "22/tcp",
+      "7077/tcp",
+      "8020/tcp"
+      "8030/tcp",
+      "8031/tcp",
+      "8032/tcp",
+      "8033/tcp",
+      "8040/tcp",
+      "8042/tcp",
+      "8080/tcp",
+      "8088/tcp",
+      "10000/tcp",
+      "50010/tcp",
+      "50020/tcp",
+      "50070/tcp",
+      "50075/tcp",
+      "50090/tcp"
+    ],
+    "volumes": ["/usr/local/hadoop"]
+  },
+  {
+    "title": "AsterixDB",
+    "description": "Apache Big Data Management System",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "kevincoakley/asterixdb:latest",
+    "ports": [
+      "19001/tcp",
+      "19002/tcp"
+    ],
+    "volumes": ["/opt/asterixdb"]
+  },
+  {
+    "title": "ServiceMix",
+    "description": "SOA Enterprise Service Bus",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "mkroli/servicemix:latest",
+    "ports": [
+      "1099/tcp",
+      "8101/tcp",
+      "8181/tcp",
+      "61616/tcp",
+      "36888/tcp",
+      "44444/tcp"
+    ],
+    "volumes": ["/deploy"]
+  },
+  {
+    "title": "CloudStack",
+    "description": "Apache Cloud Computing Management",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "cloudstack/simulator:latest",
+    "ports": [
+      "8088/tcp"
+    ]
+  },
+  {
+    "title": "Apache Ignite",
+    "description": "In-Memory Computing Platform",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "apacheignite/ignite:latest",
+    "ports": [
+      "11211/tcp",
+      "47100/tcp",
+      "47500/tcp",
+      "49112/tcp"
+    ],
+    "volumes": ["/opt/ignite"]
+  },
+  {
+    "title": "MetaModel",
+    "description": "Apache Metadata and Data Sources Query",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "kaspersor/metamodel:latest",
+    "ports": [
+      "8088/tcp"
+    ]
+  },
+  {
+    "title": "Cassandra",
+    "description": "Apache Big Data Database",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "cassandra:latest",
+    "ports": [
+      "7000/tcp",
+      "7001/tcp",
+      "7199/tcp",
+      "9042/tcp",
+      "9160/tcp"
+    ],
+    "volumes": ["/var/lib/cassandra"]
+  },
+  {
+    "title": "NuoDB",
+    "description": "Elastic Database",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "kakawait/nuodb-with-ecosystem:latest",
+    "ports": [
+      "48004/tcp",
+      "48005/tcp",
+      "48006/tcp",
+      "48007/tcp",
+      "48008/tcp",
+      "8080/tcp",
+      "8888/tcp",
+      "8889/tcp"
+    ],
+    "volumes": ["/opt/nuodb/data"]
+  },
+  {
+    "title": "Kubernetes",
+    "description": "Docker Orchestration",
+    "logo": "https://github.com/bgomesbatista/templates/raw/master/Downloads-icon.png",
+    "image": "cockpit/kubernetes:latest"
   }
 ]
