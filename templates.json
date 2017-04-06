@@ -1370,9 +1370,12 @@
     "image": "tvial/docker-mailserver:latest",
     "ports": [
       "25/tcp",
+      "110/tcp",
       "143/tcp",
       "587/tcp",
-      "993/tcp"
+      "993/tcp",
+      "995/tcp",
+      "4190/tcp"
     ],
     "volumes": ["/var/mail","/var/mail-state","/tmp/docker-mailserver"]
   },
@@ -1410,22 +1413,9 @@
     "description": "SMSC Solution",
     "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.jpg",
     "image": "smscio/smsc:latest",
-    "env": [
-      {
-        "name": "DBPASS",
-        "label": "Database Password"
-      },
-      {
-        "name":"ENABLE_POP3",
-        "label":"POP3 (true/false)"
-      },
-      {
-        "name":"ENABLE_FETCHMAIL",
-        "label":"Fetchmail Forwarding (true/false)"
-      }
-    ],
     "ports": [
-      "3000/tcp"
+      "8080/tcp",
+      "2775/tcp"
     ]
   }
 ]
