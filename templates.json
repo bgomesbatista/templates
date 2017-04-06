@@ -1463,7 +1463,7 @@
       "80/tcp",
       "443/tcp"
     ],
-    "volumes":[
+    "volumes": [
       "/var/www/onlyoffice/Data",
       "/var/log/onlyoffice",
       "/var/www/onlyoffice/DocumentServerData"
