@@ -1380,7 +1380,7 @@
     "volumes": ["/var/mail","/var/mail-state","/tmp/docker-mailserver"]
   },
   {
-    "title": "Simple MailServer",
+    "title": "Simple Mail",
     "description": "Full-features Simple Mail Server",
     "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
     "image": "hardware/mailserver:latest",
@@ -1417,5 +1417,68 @@
       "8080/tcp",
       "2775/tcp"
     ]
+  },
+  {
+    "title": "OO Community",
+    "description": "Only Office Community Server",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "image": "onlyoffice/communityserver:latest",
+    "env": [
+      {
+        "name": "DOCUMENT_SERVER_PORT_80_TCP_ADDR",
+        "label": "Only Office Document Server",
+        "type":"container"
+      },
+      {
+        "name":"MAIL_SERVER_DB_HOST",
+        "label":"Only Office Mail Server",
+        "type":"container"
+      }
+    ],
+    "ports": [
+      "80/tcp",
+      "443/tcp",
+      "5222/tcp",
+      "25/tcp",
+      "110/tcp"
+      "143/tcp",
+      "465/tcp",
+      "587/tcp",
+      "993/tcp",
+      "995/tcp"
+    ],
+    "volumes":[
+      "/var/www/onlyoffice/Data",
+      "/var/log/onlyoffice",
+      "/var/lib/mysql",
+      "/var/www/onlyoffice/DocumentServerData"
+    ]
+  },
+  {
+    "title": "OO Document",
+    "description": "Only Office Document Server",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "image": "onlyoffice/documentserver:latest",
+    "ports": [
+      "80/tcp",
+      "443/tcp"
+    ],
+    "volumes":[
+      "/var/www/onlyoffice/Data",
+      "/var/log/onlyoffice",
+      "/var/www/onlyoffice/DocumentServerData"
+    ]
+  },
+  {
+    "title": "OO Mail",
+    "description": "Only Office Mail Server",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.png",
+    "image": "onlyoffice/mailserver:latest",
+    "ports": [
+      "25/tcp",
+      "143/tcp",
+      "587/tcp"
+    ],
+    "volumes":["/var/lib/mysql","/var/log","/etc/pki/tls/mailserver","/var/vmail"]
   }
 ]
