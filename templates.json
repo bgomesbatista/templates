@@ -345,7 +345,8 @@
     "ports": [
       "8080/tcp"
     ],
-    "volumes": ["/var/run/docker.sock","/data","/conf","/assembly"]
+    "volumes": ["/var/run/docker.sock","/data","/conf","/assembly"],
+    "privileged":true
   },
   {
     "title": "XWiki",
@@ -1360,6 +1361,71 @@
     "image": "jboss/uf-dashbuilder:latest",
     "ports": [
       "8001/tcp"
+    ]
+  },
+  {
+    "title": "MailServer",
+    "description": "Docker Full Stack Email Server",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.jpg",
+    "image": "tvial/docker-mailserver:latest",
+    "ports": [
+      "25/tcp",
+      "143/tcp",
+      "587/tcp",
+      "993/tcp"
+    ],
+    "volumes": ["/var/mail","/var/mail-state","/tmp/docker-mailserver"]
+  },
+  {
+    "title": "Simple MailServer",
+    "description": "Full-features Simple Mail Server",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.jpg",
+    "image": "hardware/mailserver:latest",
+    "env": [
+      {
+        "name": "DBPASS",
+        "label": "Database Password"
+      },
+      {
+        "name":"ENABLE_POP3",
+        "label":"POP3 (true/false)"
+      },
+      {
+        "name":"ENABLE_FETCHMAIL",
+        "label":"Fetchmail Forwarding (true/false)"
+      }
+    ],
+    "ports": [
+      "25/tcp",
+      "143/tcp",
+      "465/tcp",
+      "587/tcp",
+      "993/tcp",
+      "4190/tcp"
+    ],
+    "volumes": ["/var/mail","/etc/opendkim/keys","/etc/letsencrypt"]
+  },
+  {
+    "title": "SMS Server",
+    "description": "SMSC Solution",
+    "logo": "https://raw.githubusercontent.com/bgomesbatista/templates/master/logos/logo-generic.jpg",
+    "image": "smscio/smsc:latest",
+    "env": [
+      {
+        "name": "DBPASS",
+        "label": "Database Password"
+      },
+      {
+        "name":"ENABLE_POP3",
+        "label":"POP3 (true/false)"
+      },
+      {
+        "name":"ENABLE_FETCHMAIL",
+        "label":"Fetchmail Forwarding (true/false)"
+      }
+    ],
+    "ports": [
+      "3000/tcp"
     ]
   }
 ]
